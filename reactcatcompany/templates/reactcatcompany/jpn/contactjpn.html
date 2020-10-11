@@ -1,0 +1,110 @@
+
+
+
+{% extends 'reactcatcompany/jpn/basejpn.html' %}
+
+{% load static %}
+
+
+{% block title  %}
+ReactCat Training
+{% endblock  %}
+
+
+{% block content %}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<br><br>
+<!-- Contact Section-->
+<section id="contact" class="section section-contact scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 ">
+        <div class="white black-text ">
+
+
+        {% if sender_name %}
+            <h4>Thanks {{ sender_name }}</h4>
+            <h5>We received your email</h>
+        {% else %}
+          
+          <h5 class="indigo-text">Please send an email or fill out 
+              the contact form to the right.</h5>
+          <p></p>
+           
+
+        </div>
+        <ul class="collection with-header">
+            <li class="collection-header"><h5>ReactCat Training</h5></li>
+            <li class="collection-item">
+              Kris Bernachi </li>
+            <li class="collection-item">Tokyo, Japan</li>
+            <li class="collection-item">reactcatkris@gmail.com</li>
+          </ul>
+          <p>(English or Japanese OK)</p>
+      </div>
+
+
+      <div class="col s12 m5 offset-l1">
+        <div class=" white lighten-3">
+          <h5 class="indigo-text">Contact Form</h5>
+
+          <form action="{% url 'contact' %}" method="post">
+              {% csrf_token %}
+          <div class="input-field">
+            <input type="text" name="sender-name" placeholder="First Name">
+        </div>
+       
+            <div class="input-field">
+              <input type="email" name="sender-email" placeholder="Email">
+            </div>
+            <div class="input-field">
+                <textarea class="materialize-textarea" name="sender-message"  placeholder="Message"></textarea>
+          </div>
+
+         
+
+          <input type="submit" value="Submit" class="btn indigo">
+        </div>
+    </form>
+      </div>
+    </div>
+    
+
+  </div>
+
+</section>
+{% endif %}
+
+<br><br>
+<!-- Contact End-->
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col s12 m8 ">
+
+ 
+
+  
+</div>
+</div>
+</div>
+
+
+
+
+
+{% endblock  %}

@@ -1,0 +1,390 @@
+
+
+
+{% extends 'reactcatcompany/jpn/basejpn.html' %}
+
+{% load static %}
+
+
+{% block title  %}
+ReactCat Training
+{% endblock  %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+<!-- Section Slider -->
+<section class="slider">
+    <ul class="slides">
+        <li>
+          <img src="{% static 'img/site/girlwork.jpg'%}"> 
+          <div class="caption left-align">
+            <h5>英語でプログラミングの研修</h5>
+            <h6 class="light grey-text text-lighten-3 hide-on-small-only">
+              プログラミングスキルを取得</h6>
+              <h6 class="light grey-text text-lighten-3 hide-on-small-only">
+                英語のコンミュニケションスキルを取得 </h6>
+                <br><br>
+                
+                
+          </div>
+        </li>
+        
+        
+      </ul>
+
+
+
+
+
+</section>
+
+
+
+<!-- Slider End-->
+
+<!-- Search Section-->
+
+<section id="services" 
+class="section section-search grey lighten-4 grey-text text-darken-4 center scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="div col-s12">
+        <h5>"会社向けと個人向けのプログラミングコース"</h5>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Search End-->
+<br><br>
+
+  
+
+
+
+
+<!-- Section Courses -->
+
+<section class="section section-icons  lighten-4 center"></section>
+  <div class="container">
+    
+      <div class="row">
+
+        <div class="col s12 m4">
+          <div class="card-panel ">
+            
+
+            <img class="responsive-img" width ="200" src="{% static 'img/logos/pystarter.png'%}" > 
+            <h6 class="indigo-text">Python言語のプログラミング</h6>
+            <p>Learn how to code with python. This course is an introduction into the 
+              python programming language. 
+              
+            </p>
+            <a href="{% url 'pythonintrojpn' %}"
+               class=" white  waves-effect waves-light indigo-text" 
+               type="submit" name="action">
+              View Details ></a>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel ">
+            
+
+            <img class="responsive-img" width ="200" src="{% static 'img/logos/pyadvanced.png'%}" >  
+            <h6 class="indigo-text">Python言語のプログラミング</h6>
+            <p>Build programs with python. This course is a continuation 
+              from the python starter course. 
+            </p>
+            <a href="{% url 'pythonadvancedjpn' %}"
+               class=" white  waves-effect waves-light indigo-text" 
+               type="submit" name="action">
+              View Details ></a>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel ">
+            
+
+            <img class="responsive-img" width ="200" src="{% static 'img/logos/pythonpandas.png'%}" > 
+            <h6 class="indigo-text">Python言語とPandasデータ分析</h6>
+            <p>Learn data anyalysis. This course is an introduction into 
+              data analysis with python/pandas.
+            </p>
+            <a href="{% url 'pythonpandasjpn' %}"
+               class=" white  waves-effect waves-light indigo-text" 
+               type="submit" name="action">
+              View Details ></a>
+          </div>
+        </div>
+        
+
+      </div>
+     
+  </div>
+
+  
+  
+
+
+<!-- Courses  End-->
+
+
+
+
+<!-- Section Courses -->
+
+<section class="section section-icons  lighten-4 center"></section>
+  <div class="container">
+
+      <div class="row">
+
+        <div class="col s12 m4">
+          <div class="card-panel ">
+            
+
+            <img class="responsive-img" width ="200" src="{% static 'img/logos/pydjangoweb.png'%}" > 
+            <h6 class="indigo-text">Python/Djangoのウェブ開発 </h6>
+            <p>Learn Full-Stack web development by building projects with the python/django framework.
+            </p>
+            <a href="{% url 'pythondjangojpn' %}"
+            class=" white  waves-effect waves-light indigo-text" 
+            type="submit" name="action">
+           View Details ></a>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel ">
+            
+
+            <img class="responsive-img" width ="200" src="{% static 'img/logos/pydjangoshopping.png'%}" > 
+            <h6 class="indigo-text">Python/Djangoのウェブ開発</h6>
+            <p>Learn how to build an e-commerce shopping site with the python/django framework.
+            </p>
+            <a href="{% url 'pydjangoecomjpn' %}"
+            class=" white  waves-effect waves-light indigo-text" 
+            type="submit" name="action">
+           View Details ></a>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel ">
+            
+
+            <img class="responsive-img" width ="200" src="{% static 'img/logos/pydjangoapi.png'%}" > 
+            <h6 class="indigo-text">Python/Djangoのウェブ開発</h6>
+            <p>Learn how to build APIs and Rest-APIs with the python/django framework.
+            </p>
+            <a href="{% url 'pydjangoapijpn' %}"
+               class=" white  waves-effect waves-light indigo-text" 
+               type="submit" name="action">
+              View Details ></a>
+          </div>
+        </div>
+        
+
+      </div>
+
+  </div>
+
+  
+
+
+<!-- Courses End-->
+
+<!-- Section Courses -->
+
+<section class="section section-icons  lighten-4 center"></section>
+  <div class="container">
+
+      <div class="row">
+
+        
+        <div class="col s12 m4">
+          <div class="card-panel ">
+            
+
+            <img class="responsive-img" width ="200" src="{% static 'img/logos/reactui.png'%}" > 
+            <h6 class="indigo-text">React JS</h6>
+            <p>Learn how to build front-end applications with React JS powered by Node.js
+            </p>
+            <a href="{% url 'pythonreactjpn' %}"
+            class=" white  waves-effect waves-light indigo-text" 
+            type="submit" name="action">
+           View Details ></a>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card-panel ">
+            
+
+            <img class="responsive-img" width ="200" src="{% static 'img/logos/officecom.png'%}" > 
+            <h6 class="indigo-text">エンジン向けのビズネス英会話</h6>
+            <p>Learn how to effectively communicate in English in a business/IT environment.
+               
+            </p>
+            <a href="{% url 'pybusinessitjpn' %}"
+            class=" white  waves-effect waves-light indigo-text" 
+            type="submit" name="action">
+           View Details ></a>
+          </div>
+        </div>
+        
+        
+
+      </div>
+
+  </div>
+
+  <br><br>
+  <br><br>
+  
+  
+
+
+<!-- Courses End-->
+
+<!-- Search Section-->
+
+<section id="services" 
+class="section section-search grey lighten-4 grey-text text-darken-4 center ">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m3">
+        
+        <span> <i class="material-icons  
+          small">work</i>    </span>
+          <h5>会社向けレーソン</h5>
+         
+      
+      
+      </div>
+      <div class="col s12 m3 offset-l1">
+        <i class="material-icons  
+        small">laptop_mac</i> 
+     <h5>個人向けレーソン</h5>
+       
+        
+     
+      </div>
+      <div class="col s12 m3 offset-l1">
+        <i class="material-icons  
+              small">cast</i> 
+              <h5>オンラインレーソン</h5>
+        
+        
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Search End-->
+
+
+
+
+
+
+
+
+
+
+<!-- Icons End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+<!-- Contact Section-->
+<section id="contact" class="section section-contact scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 ">
+        <div class="white black-text ">
+          
+          <h5 class="indigo-text">More Information>></h5>
+          <p></p>
+           
+
+        </div>
+        <ul class="collection with-header">
+          <li class="collection-header"><h5>Contact ReactCat Training</h5></li>
+          <li class="collection-item">For information on course prices, lesson locations, 
+            scheduling and trial lessons please contact us by email or through the contact form.
+            
+          </li>
+          
+        </ul>
+        
+        <a href="{% url 'contact' %}"
+        class=" indigo  waves-effect waves-lightb btn" 
+        type="submit" name="action">
+       Contact  </a>
+      </div>
+      
+      <div class="col s12 m5 offset-l1">
+        <div class=" white lighten-3">
+          
+          
+         
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<br><br>
+
+
+<!-- Contact End-->
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col s12 m8 ">
+
+ 
+
+  
+</div>
+</div>
+</div>
+
+
+
+
+
+{% endblock  %}

@@ -1,0 +1,231 @@
+{% extends 'reactcatcompany/jpn/basejpn.html' %}
+
+{% load static %}
+
+
+{% block title  %}
+ReactCat Training
+{% endblock  %}
+
+
+{% block content %}
+
+
+
+
+
+
+<br><br>
+
+
+<section id="services" 
+class="section grey lighten-4 grey-text text-darken-4 center">
+  <div class="container">
+
+    
+
+    <div class="row">
+      
+      
+      <div class="col s16">
+        <h5 class="indigo-text">"An Introduction React UI"</h5>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<br><br>
+<section id="services">
+  <div class="container">
+
+
+
+    <div class="row">
+      
+      
+      <div class="col s12">
+       
+        <img width="140"src="{% static 'img/logos/pylogo.png'%}">
+       
+      
+        
+
+        
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<section>
+    
+      
+          <div class="row">
+            
+            <div class="container">
+              {% for course in pythoncourse %}
+              {% if course.coursecode == 1006 %}
+              
+            
+            <div class="col s8">
+            
+              <div class="section">
+               <h6>{{course.courseovertit}}</h6>
+               <p style="font-size: 17px;">
+                {{course.courseoverdet}}</p> 
+                <div class="divider"></div>
+                <br><br>
+                <h6>{{course.coursereqtit}}</h6>
+               <p style="font-size: 17px;">
+                {{course.coursereqdet}}</p> 
+                <div class="divider"></div>
+                <br><br>
+
+
+                <h6>{{course.coursecover}}</h6> 
+               
+  
+                <ul>
+                  {% if course.courseinfo1 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo1}}</li> 
+                  {% endif %} 
+
+                  {% if course.courseinfo2 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo2}}</li> 
+                  {% endif %} 
+
+                  {% if course.courseinfo3 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo3}}</li> 
+                  {% endif %} 
+
+                  {% if course.courseinfo4 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo4}}</li> 
+                  {% endif %} 
+
+                  {% if course.courseinfo5 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo5}}</li> 
+                  {% endif %} 
+
+                  {% if course.courseinfo6 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo6}}</li> 
+                  {% endif %} 
+
+                  {% if course.courseinfo7 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo7}}</li> 
+                  {% endif %} 
+                  {% if course.courseinfo8 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo8}}</li> 
+                  {% endif %} 
+                  {% if course.courseinfo9 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo9}}</li> 
+                  {% endif %} 
+                  {% if course.courseinfo10 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo10}}</li> 
+                  {% endif %} 
+                  {% if course.courseinfo11 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo11}}</li> 
+                  {% endif %} 
+                  {% if course.courseinfo12 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo12}}</li> 
+                  {% endif %} 
+                  {% if course.courseinfo13 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo13}}</li> 
+                  {% endif %} 
+                  {% if course.courseinfo14 %} 
+                <li style="font-size: 17px;">
+                  <i class = "material-icons indigo-text tiny">chevron_right</i>
+                  {{course.courseinfo14}}</li> 
+                  {% endif %} 
+
+                 
+                  
+                    </ul>
+                
+          
+                        
+            
+              </div> 
+              <br><br>
+              
+              <div>
+                <h6 class="indigo-text lighten-4-text">{{course.coursestart}}</h6>
+                <p style="font-size: 17px;">
+                  {{course.contactdetails}}</p> 
+                
+                  <a href="{% url 'contact' %}"
+                  class=" indigo  waves-effect waves-lightb btn" 
+                  type="submit" name="action">
+                 Contact  </a>
+              </div>
+             
+              </div> 
+              {% endif %}
+              {% endfor %} 
+             
+              </div> 
+             
+              </div>
+
+            
+
+<section>
+
+
+
+
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br> 
+
+
+
+<!-- Icons End-->
+
+
+
+
+
+
+
+
+<!-- Section Icons -->
+
+
+
+{% endblock  %}

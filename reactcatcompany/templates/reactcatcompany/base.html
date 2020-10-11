@@ -1,0 +1,144 @@
+{% load static %}
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+      <link href="css/prism.css" rel="stylesheet" />
+      
+      
+      <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a7592f8bc2.js" crossorigin="anonymous"></script>
+      
+    <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>ReactCat</title>
+    </head>
+
+    <body id="home" class="scrollspy">
+
+ <!-- Top Navigation -->
+
+ 
+        <div class="navbar-fixed">
+            <nav class="white" style="min-height: 80px">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="{% url 'home' %}" class="brand-logo grey-text text-darken-4">ReactCat Training</a>
+                        <a href="" data-target ="mobile" class="sidenav-trigger black-text">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a class="indigo-text text-lighten-2" href="{% url 'homejpn' %}">
+                                <i class=" material-icons left">language
+                                </i>JPN</a></li>
+                            
+                            <li>
+                                <a class="black-text" href="{% url 'companyinfo' %}">Company Info</a>
+                            </li>
+                            <li>
+                                <a class="black-text" href="{% url 'contact' %}">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile">
+            <li><a class="indigo-text text-lighten-2" href="{% url 'homejpn' %}">
+                <i class=" material-icons left">language
+                </i>JPN</a></li>
+            
+            <li>
+                <a class="black-text" href="{% url 'companyinfo' %}">Company Info</a>
+            </li>
+            <li>
+                <a class="black-text" href="{% url 'contact' %}">Contact</a>
+            </li>
+        </ul>
+<!-- Navigation End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block content %}
+
+
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="section grey lighten-2 indigo-text center">
+    <p class="flow-text">ReactCat Training  &copy; 2020 </p>
+    </footer>
+    
+    <!-- Footer End-->
+
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <!--JavaScript at end of body for optimized loading-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          <script type="text/javascript" src="js/init.js"></script>
+       
+          <!-- Mobile Menu JS-->
+       <script>var sideNav = document.querySelector('.sidenav');
+            M.Sidenav.init(sideNav, {});
+              </script>
+          
+          <!-- Slider JS-->
+          <script>var slider = document.querySelector('.slider');
+            M.Slider.init(slider, {indicators: false, height: 290, transition:500, interval:6000});
+              </script>
+    
+          <!-- Scrollspy JS-->  
+          <script>
+           var elems = document.querySelectorAll('.scrollspy');
+           var instances = M.ScrollSpy.init(elems, options);
+              </script>
+
+       
+       <script>
+        var el = document.querySelector('.tabs');
+        var instance = M.Tabs.init(el, {});
+      </script>
+                
+        </body>
+      </html>
+            
